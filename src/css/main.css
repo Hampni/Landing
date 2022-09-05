@@ -1,3 +1,84 @@
 body {
-    background-color: aquamarine;
+    background-color: #0e1a35;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*.convert {*/
+/*    padding: 3%;*/
+/*}*/
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3%;
+}
+
+li.nav {
+    display: inline-block;
+    padding: 2%;
+}
+
+a.nav {
+}
+a.nav-skin {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9vw;
+}
+
+.nav-logo {
+    padding-left: 3em;
+}
+
+.nav-links {
+    text-align: right;
+    height: 100%;
+    padding-right: 3em;
+}
+
+.col {
+    width: 100%;
+}
+
+.logo {
+    width: 10vw;
+}
+
+.btn {
+    border-radius: 1em;
+}
+
+.btn-login {
+    width: 7vw;
+    height: 2vw;
+    font-size: 0.9vw;
+    background: none;
+    border: solid #5584ff 1px;
+    color: #5584ff;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background: #15254a;
+    color: white;
+    transition: color 0.7s, background 0.7s;
+}
+
+.graph {
+    width: 100%;
+    scale: 101%;
+    z-index: -11;
+    position: absolute;
+}
+
+.grid {
+    width: 100%;
+    z-index: -10;
+    position: absolute;
+    top: -10px;
 }
