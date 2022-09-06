@@ -109,6 +109,7 @@ div.home {
     flex-direction: column;
     align-items: center;
     padding-top: 3vw;
+    position: relative;
 }
 
 div.home-skin {
@@ -142,11 +143,17 @@ h2.skin {
 img.home {
     margin-top: 4vw;
     width: 45vw;
-    box-shadow:  0 0px 100px 20px #13234a;
+    position: absolute;
 }
 
 .shadow_img {
+    /*delete*/
     background: red;
+    width: 45vw;
+    height: 31.7vw;
+    margin-top: 4vw;
+    box-shadow:  0 0 100px 20px #13234a;
+    z-index: 3;
 }
 
 .btn-g-started {
