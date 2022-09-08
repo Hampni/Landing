@@ -182,13 +182,23 @@ img.home {
 .f-skin {
     background: #f9f9fb;
 }
+@media only screen and (min-width: 1500px) {
+    .features {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 6;
+        justify-content: center;
+    }
+}
 
 .features {
     display: flex;
     flex-direction: row;
-    /*position: relative;*/
+    position: relative;
     z-index: 6;
     justify-content: center;
+    align-items: center;
 }
 
 .feature {
@@ -221,6 +231,10 @@ img.home {
 
 .f-header {
     padding-top: 2em;
+}
+
+.f-header-big {
+    padding-top: 2vw;
 }
 
 .h-skin {
@@ -287,7 +301,7 @@ img.home {
 
 @media only screen and (max-width: 1000px) {
     .g-text {
-        font-size: 20%;
+        font-size: 1vw;
         margin-top: 3vw;
         margin-bottom: 1em;
         color: red;
@@ -300,16 +314,14 @@ img.home {
     margin-bottom: 1em;
 }
 
-.paragraphs {
+.paragraph {
     max-width: 27vw;
-
 }
 
 .g-check {
     display: flex;
     justify-content: flex-start;
     margin-top: 1vw;
-    max-width: 12vw;
     overflow: hidden;
 }
 
@@ -403,6 +415,11 @@ img.home {
     padding-bottom: 3vw;
     text-align: center;
     box-shadow: 0 0 2vw -0.8vw grey;
+    transition: scale 1s;
+}
+
+.plan:hover {
+    scale: 110%;
 }
 
 .p-header {
@@ -427,6 +444,7 @@ img.home {
 
 .price-features {
     margin-top: 1vw;
+    max-width: 12vw;
 }
 
 .pr-skin {
@@ -453,7 +471,7 @@ img.home {
     width: 11vw;
     border: solid 0.1em #dadee7;
     height: 0;
-    margin-top: 3vw;
+    margin-top: 3em;
     margin-left: 2vw;
     margin-right: 2vw;
 }
@@ -467,8 +485,6 @@ img.home {
 
 .foot-li {
     padding: 1.5vw;
-
-
 }
 
 .foot-a {
@@ -485,6 +501,11 @@ img.home {
 .cont-li {
     width: 3em;
 }
+
+.parag {
+    display: none;
+}
+
 
 
 

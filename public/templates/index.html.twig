@@ -8,8 +8,8 @@
             </div>
             <div class="col nav-links">
                 <ul class="nav">
-                    <li class="nav"><a href="" class="nav nav-skin">Features</a></li>
-                    <li class="nav"><a href="" class="nav nav-skin">Pricing</a></li>
+                    <li class="nav"><a href="" class="nav nav-skin" id="features">Features</a></li>
+                    <li class="nav"><a href="" class="nav nav-skin" id="pricing">Pricing</a></li>
                     <li class="nav"><a href="" class="nav nav-skin">Blog</a></li>
                     <li class="nav"><a href="" class="nav nav-skin">Contact</a></li>
                     <li class="nav"><a href="" class="nav nav-skin">
@@ -33,7 +33,7 @@
     </div>
 
     <div class="f-background f-skin">
-        <div class="features">
+        <div class="features" id="features_list">
             <div class="feature">
                 <img class="f-img" src="/images/Workflow(1).png" alt="">
                 <div class="line"></div>
@@ -131,15 +131,29 @@
         </div>
         <div class="dd-part dd-text">
             <h1 class="d-header roboto_thin">Drag & Drop</h1>
-            <div class="paragraphs">
-                <p class="t-skin t-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. </p>
-                <p class="t-skin t-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="paragraph" id="paragraphs">
+                <div class="parag">
+                    <p class="t-skin t-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p class="t-skin t-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="parag">
+                    <p class="t-skin t-align"> Integer vitae in morbi ornare ornare pulvinar non dolor leo, lectus
+                        dapibus cras mattis nunc faucibus. Pulvinar nec venenatis elit. </p>
+                    <p class="t-skin t-align"> Non ornare dapibus non morbi dui eget sed ex. Arcu luctus orci, nulla
+                        dictumst. Interdum aenean quam, velit dictum. </p>
+                </div>
+                <div class="parag">
+                    <p class="t-skin t-align"> Sodales mollis adipiscing dolor adipiscing nulla augue adipiscing lorem
+                        pulvinar orci, dapibus amet dictum lorem pulvinar.  </p>
+                    <p class="t-skin t-align">Lorem mollis lorem vulputate eget aenean id justo dapibus mattis
+                        consectetur cursu. Non interdum non ex. </p>
+                </div>
             </div>
             <div class="arrows">
-                <img class="arrow" src="/images/Arrow_left.png" alt="">
-                <img class="arrow" src="/images/Arrow_right.png" alt="">
+                <img class="arrow" id="left_arrow" src="/images/Arrow_left.png" alt="">
+                <img class="arrow" id="right_arrow" src="/images/Arrow_right.png" alt="">
             </div>
         </div>
     </div>
@@ -159,7 +173,7 @@
 
     <div class="f-background p-skin template">
         <h1 class="roboto_thin p-text">Check our pricing!</h1>
-        <div class="features">
+        <div class="features" id="price">
             <div class="plan">
                 <p class="p-header">BRONZE PLAN</p>
                 <div class="price">
@@ -203,7 +217,7 @@
                         <text class="t-skin pr-skin">Lorem ipsum dolor sit amet consectetur</text>
                     </div>
                     <div class="g-check check-skin">
-                        <img class="check-img" src="/images/cross.png" alt="">
+                        <img class="check-img" src="/images/check.png" alt="">
                         <text class="t-skin pr-skin">Lorem ipsum dolor sit amet consectetur</text>
                     </div>
                     <div class="g-check check-skin">
@@ -229,11 +243,11 @@
                         <text class="t-skin pr-skin">Lorem ipsum dolor sit amet consectetur</text>
                     </div>
                     <div class="g-check check-skin">
-                        <img class="check-img" src="/images/cross.png" alt="">
+                        <img class="check-img" src="/images/check.png" alt="">
                         <text class="t-skin pr-skin">Lorem ipsum dolor sit amet consectetur</text>
                     </div>
                     <div class="g-check check-skin">
-                        <img class="check-img" src="/images/cross.png" alt="">
+                        <img class="check-img" src="/images/check.png" alt="">
                         <text class="t-skin pr-skin">Lorem ipsum dolor sit amet consectetur</text>
                     </div>
                 </div>
@@ -254,11 +268,5 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
 
 {% endblock %}
