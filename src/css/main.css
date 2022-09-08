@@ -202,7 +202,7 @@ img.home {
 }
 
 .feature {
-    width: 16vw;
+    width: 16em;
     margin: 4.5vw;
     text-align: center;
     padding-top: 9vw;
@@ -226,7 +226,7 @@ img.home {
     border: solid 0.1em #dadee7;
     height: 0;
     top: -2.7em;
-    left: 14.8vw;
+    left: 14.8em;
 }
 
 .f-header {
@@ -407,11 +407,13 @@ img.home {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 16vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    width: 17vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
     margin-top: 2vw;
     padding-top: 1vw;
+    padding-left: 1em;
+    padding-right: 1em;
     padding-bottom: 3vw;
     text-align: center;
     box-shadow: 0 0 2vw -0.8vw grey;
@@ -444,7 +446,7 @@ img.home {
 
 .price-features {
     margin-top: 1vw;
-    max-width: 12vw;
+    max-width: 14vw;
 }
 
 .pr-skin {

@@ -55,18 +55,18 @@ let windowRation = window.devicePixelRatio*100;
 //   }
 // });
 
-if (window.devicePixelRatio*100 > 250) {
-  document.querySelector('.features').style.flexDirection = 'column'
-} else if (window.devicePixelRatio*100 < 250) {
-  document.querySelector('.features').style.flexDirection = 'row'
-}
-
-window.addEventListener('resize', function(event){
-  if (window.devicePixelRatio*100 > 250) {
-    document.querySelector('.features').style.flexDirection = 'column'
-  } else if (window.devicePixelRatio*100 < 250) {
-    document.querySelector('.features').style.flexDirection = 'row'
-  }
-});
+// if (window.devicePixelRatio*100 > 250) {
+//   document.querySelector('.features').style.flexDirection = 'column'
+// } else if (window.devicePixelRatio*100 < 250) {
+//   document.querySelector('.features').style.flexDirection = 'row'
+// }
+//
+// window.addEventListener('resize', function(event){
+//   if (window.devicePixelRatio*100 > 250) {
+//     document.querySelector('.features').style.flexDirection = 'column'
+//   } else if (window.devicePixelRatio*100 < 250) {
+//     document.querySelector('.features').style.flexDirection = 'row'
+//   }
+// });
 
 
