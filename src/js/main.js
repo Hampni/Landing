@@ -2,6 +2,7 @@ import '../css/main.css'
 
 const features = document.getElementById('features')
 const pricing = document.getElementById('pricing')
+const carousel = document.querySelector('.paragraph')
 const left_arrow = document.getElementById('left_arrow')
 const right_arrow = document.getElementById('right_arrow')
 
@@ -20,53 +21,53 @@ let i = 0
 paragraphs[i].style.display = 'block'
 
 left_arrow.onclick = function () {
-  paragraphs[i].style.display = 'none'
-  if (i - 1 < 0) {
-    i = paragraphs.length - 1
-  } else {
-    i = i - 1
-  }
-  paragraphs[i].style.display = 'block'
+  carousel.style.opacity = '0'
+  setTimeout(function () {
+    paragraphs[i].style.display = 'none'
+    if (i - 1 < 0) {
+      i = paragraphs.length - 1
+    } else {
+      i = i - 1
+    }
+    paragraphs[i].style.display = 'block'
+    carousel.style.opacity = '100%'
+  }, 600);
+
 }
 
 right_arrow.onclick = function () {
-  paragraphs[i].style.display = 'none'
-  if (i + 1 >= paragraphs.length) {
-    i = 0
-  } else {
-    i = i + 1
-  }
-  paragraphs[i].style.display = 'block'
+  carousel.style.opacity = '0'
+  setTimeout(function () {
+    paragraphs[i].style.display = 'none'
+    if (i + 1 >= paragraphs.length) {
+      i = 0
+    } else {
+      i = i + 1
+    }
+    paragraphs[i].style.display = 'block'
+    carousel.style.opacity = '100%'
+  }, 500);
 }
 
-let windowRation = window.devicePixelRatio*100;
+// When the user clicks on the button,
+// toggle between hiding and showing the dropdown content
 
-// if (window.devicePixelRatio*100 > 250) {
-//   document.querySelector('.features').style.flexDirection = 'column'
-// } else if (window.devicePixelRatio*100 < 250) {
-//   document.querySelector('.features').style.flexDirection = 'row'
-// }
-//
-// window.addEventListener('resize', function(event){
-//   if (window.devicePixelRatio*100 > 250) {
-//     document.querySelector('.features').style.flexDirection = 'column'
-//   } else if (window.devicePixelRatio*100 < 250) {
-//     document.querySelector('.features').style.flexDirection = 'row'
-//   }
-// });
+document.querySelector('.dropbtn').addEventListener('click', function () {
+  document.getElementById('myDropdown').classList.toggle('show')
+})
 
-// if (window.devicePixelRatio*100 > 250) {
-//   document.querySelector('.features').style.flexDirection = 'column'
-// } else if (window.devicePixelRatio*100 < 250) {
-//   document.querySelector('.features').style.flexDirection = 'row'
-// }
-//
-// window.addEventListener('resize', function(event){
-//   if (window.devicePixelRatio*100 > 250) {
-//     document.querySelector('.features').style.flexDirection = 'column'
-//   } else if (window.devicePixelRatio*100 < 250) {
-//     document.querySelector('.features').style.flexDirection = 'row'
-//   }
-// });
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn')) {
 
+    let dropdowns = document.getElementsByClassName('dropdown-content')
+    let i
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i]
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show')
+      }
+    }
+  }
+}
 
