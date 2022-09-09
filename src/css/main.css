@@ -120,7 +120,7 @@ div.home-skin {
     border: solid 0.1em #dadee7;
     height: 0;
     top: -2.7em;
-    left: 17vw;
+    left: 15vw;
 }
 
 .f-header-big {
@@ -237,7 +237,7 @@ div.home-skin {
     .feature {
         width: 16vw;
         height: 20em;
-        margin: 4.5vw;
+        margin: 3vw;
         text-align: center;
         padding: 2vw;
         padding-top: 9vw;
@@ -505,7 +505,7 @@ div.home-skin {
 
     .h-skin {
         font-weight: bold;
-        font-size: 2.5vw;
+        font-size: 2.2vw;
         font-family: 'Roboto', sans-serif;
     }
 
