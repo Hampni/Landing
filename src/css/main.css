@@ -11,27 +11,8 @@ ul {
     display: none;
 }
 
-/*ul.nav {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: flex-end;*/
-/*    align-items: center;*/
-/*    padding: 0;*/
-/*    list-style-type: none;*/
-/*}*/
-
 a.nav {
     padding: 0;
-}
-
-/*a.nav-skin {*/
-/*    color: #ffffff;*/
-/*    text-decoration: none;*/
-/*    font-size: 0.9em;*/
-/*}*/
-
-.col {
-    width: 100%;
 }
 
 .btn {
@@ -39,15 +20,6 @@ a.nav {
     cursor: pointer;
     transition: color 0.7s, background 0.7s;
 }
-
-/*.btn-login {*/
-/*    width: 7em;*/
-/*    height: 2em;*/
-/*    font-size: 0.9em;*/
-/*    background: none;*/
-/*    border: solid #5584ff 0.1em;*/
-/*    color: #5584ff;*/
-/*}*/
 
 .btn-login:hover {
     background: #15254a;
@@ -103,15 +75,6 @@ div.home-skin {
     background: #f9f9fb;
 }
 
-/*.features {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    position: relative;*/
-/*    z-index: 6;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
 @media only screen and (max-width: 1000px) {
     .line {
         display: none;
@@ -138,6 +101,10 @@ div.home-skin {
 }
 
 @media only screen and (min-width: 800px) {
+
+    .col {
+        width: 100%;
+    }
 
     .toggleMenu {
         display: none;
@@ -813,6 +780,7 @@ div.home-skin {
         color: #8391ae;
         padding: 3vw;
         font-size: 4vw;
+        margin: 0;
     }
 
 }
