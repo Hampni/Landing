@@ -468,9 +468,12 @@ div.home-skin {
     }
 
     a.nav-skin {
-        color: black;
+        color: white;
         text-decoration: none;
         font-size: 4vw;
+        font-family: roboto, sans-serif;
+        font-weight: 200;
+        font-style: normal;
     }
 
     .nav-links {
@@ -496,15 +499,17 @@ div.home-skin {
 
     li.nav {
         width: 100%;
-        background: white;
-        padding-top: 7vw;
+        padding-top: 5vw;
         padding-bottom: 6vw;
-        border-bottom: 0.1vw black solid;
-        border-radius: 9vw;
+        background: black;
     }
 
     .menuLinks {
         font-size: 7vw;
+        font-family: roboto, sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        color: white;
     }
 
     h1.home {
