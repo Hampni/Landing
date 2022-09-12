@@ -49,25 +49,35 @@ right_arrow.onclick = function () {
   }, 500);
 }
 
+let imageMenu = document.querySelector('.miniMenu')
+
+imageMenu.addEventListener('click', function () {
+  if (imageMenu.style.rotate === '90deg') {
+    imageMenu.style.rotate = '0deg'
+  } else {
+    imageMenu.style.rotate = '90deg'
+  }
+})
+
 // When the user clicks on the button,
 // toggle between hiding and showing the dropdown content
 
-document.querySelector('.dropbtn').addEventListener('click', function () {
-  document.getElementById('myDropdown').classList.toggle('show')
-})
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    let dropdowns = document.getElementsByClassName('dropdown-content')
-    let i
-    for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i]
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show')
-      }
-    }
-  }
-}
+// document.querySelector('.miniMenu').addEventListener('click', function () {
+//   document.getElementById('myDropdown').classList.toggle('show')
+// })
+//
+// // Close the dropdown menu if the user clicks outside of it
+// window.onclick = function (event) {
+//   if (!event.target.matches('.dropbtn')) {
+//
+//     let dropdowns = document.getElementsByClassName('dropdown-content')
+//     let i
+//     for (i = 0; i < dropdowns.length; i++) {
+//       let openDropdown = dropdowns[i]
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show')
+//       }
+//     }
+//   }
+// }
 
