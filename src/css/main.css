@@ -782,6 +782,9 @@ div.home-skin {
         margin: 0;
     }
 
+    .footer-nav {
+        display: none;
+    }
 }
 
 .btn-feature:hover {
