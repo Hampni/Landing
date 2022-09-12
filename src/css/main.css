@@ -470,7 +470,7 @@ div.home-skin {
     a.nav-skin {
         color: black;
         text-decoration: none;
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .nav-links {
@@ -487,15 +487,24 @@ div.home-skin {
     }
 
     ul.nav {
-        display: block;
         position: absolute;
-        z-index: 100;
+        display: block;
+        z-index: 101;
+        width: 100%;
+        left: 0;
     }
 
     li.nav {
-        padding: 1vw;
-        font-size: 2.5vw;
+        width: 100%;
         background: white;
+        padding-top: 7vw;
+        padding-bottom: 6vw;
+        border-bottom: 0.1vw black solid;
+        border-radius: 9vw;
+    }
+
+    .menuLinks {
+        font-size: 7vw;
     }
 
     h1.home {
