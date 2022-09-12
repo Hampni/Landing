@@ -448,8 +448,6 @@ div.home-skin {
 
     input.toggleMenu:checked ~ ul.nav {
         display: none;
-        position: absolute;
-        z-index: 100;
     }
 
     .image {
@@ -491,6 +489,7 @@ div.home-skin {
     ul.nav {
         display: block;
         position: absolute;
+        z-index: 100;
     }
 
     li.nav {
