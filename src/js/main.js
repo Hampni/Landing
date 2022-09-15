@@ -8,7 +8,7 @@ const right_arrow = document.getElementById('right_arrow')
 
 features.addEventListener('click', function (e) {
   e.preventDefault()
-  document.getElementById('features_list').scrollIntoView({ behavior: 'smooth', block: 'center' })
+  document.getElementById('features-list').scrollIntoView({ behavior: 'smooth', block: 'center' })
 })
 
 pricing.addEventListener('click', function (e) {
